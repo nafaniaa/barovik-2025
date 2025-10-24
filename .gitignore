@@ -1,27 +1,57 @@
-# Виртуальное окружение Python
+# Виртуальные окружения Python
 venv/
-env/
 .venv/
+env/
 ENV/
-
-# Другие возможные имена
 venv*/
 *.venv
 
-# Папки с зависимостями
+# Папки и файлы PyInstaller (если будешь делать .exe)
+build/
+dist/
+__pycache__/
+*.spec
+
+# Кэш Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+*.egg
 
-# IDE
+# Логи и временные файлы
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# IDE и редакторы
 .idea/
 .vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Система
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# UPX (если используешь сжатие .exe)
+upx.exe
+upx*.exe
+
+# Локальные настройки
+.env
+config.local.py
+
+# Большие бинарники (если случайно добавишь .exe в корень)
+*.exe
+*.dll
+*.so
+*.dylib
